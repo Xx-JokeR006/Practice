@@ -1,35 +1,72 @@
-@charset "utf-8";
-
-body {
-    width: 100%;
+html{
+    font-size: 100%;
 }
-.midashi {
-    font-size: 40px;
-    font-weight: 800;
-    color: brown;
-    text-align: center;
-    
+body{
+    background-color: #f4f9ff;
 }
-
-
-/* Flexbox練習 */
-.inner {
+.container{
     max-width: 1000px;
     margin: 0 auto;
 }
-img {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
+.site-title a img{
+    width: 160px;
 }
-.wrap1 {
-    background-color: beige;
+#main img{
+    width: 100%;
+}
+#index{
+    background-color: #ffffff;
+    margin: 60px 0;
+    padding: 35px 0;
+}
+#index #list li{
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+.inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.title{
+    font-weight: bold;
+}
+#detail .content{
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
 }
-.wrap1__title {
-    line-height: 1em;
+#detail .content img{
+    width: 270px;
+    margin-right: 60px;
 }
-.wrap1__caption {
-    line-height: 1em;
+#detail .content dl{
+    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+}
+h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+dl{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1024px) {
+
+    .inner{
+        padding: 0 40px;
+        width: 90%;
+    }
+    #header{
+        padding: 0 10px;
+    }
+    #main{
+        padding: 0 10px;
+    }
+    #detail .content{
+        flex-direction: column;
+    }
+    #detail .content .img{
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
 }
